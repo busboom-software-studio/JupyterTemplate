@@ -1,0 +1,26 @@
+name: env
+channels:
+  - conda-forge
+dependencies:
+  - python==3.11
+  - pip
+  - python-dotenv
+  - ipython 
+  - jupyter
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  - sympy
+  - tqdm
+  - watermark
+  - spyder
+  - spyder-kernels==2.4.*
+  - spyder-notebook
+  - spyder-terminal
+  - cython
+  - nbdime
+  - xeus-cling
+  - ipyparallel

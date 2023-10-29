@@ -1,2 +1,4 @@
-# JupyterTemplate
-Template for running Jupyter Notebooks
+# Project Readme
+
+Put some useful information about your project here. 
+
