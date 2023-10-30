@@ -13,6 +13,11 @@ creating a virtual environment for Python and installing packages.
 * You can use ``conda``, which will perform all of these steps at once. 
 
 
+Conda will give you more options for what tools and extensions you can run, but
+the installation is really, really slow. The Python virtual environment is much
+faster, but you won't be able to run the Spyder IDE and won't get extra Jupyter
+kernels.
+
 ## Python Virtual Environments
 
 As of October 2023, Python 3.12 isn't working well with some important
