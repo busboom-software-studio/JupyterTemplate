@@ -106,7 +106,7 @@ Creating the conda environment may be very slow.
 Jupyterlab is the main program you will be running. From the root of your repository, just run:
 
 ```
-jupyter-lab
+bin/start.sh
 ```
 
 This should open up a new browser. If if does not, it will print a URL that you can past into a browser. 
