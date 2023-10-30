@@ -99,6 +99,7 @@ conda activate ./.env
 Creating the conda environment may be very slow. 
 
 
+# Tools
 
 
 ## JupyterLab
@@ -112,15 +113,19 @@ bin/start.sh
 This should open up a new browser. If if does not, it will print a URL that you can past into a browser. 
 
 
-If you lose track of which jupyter servers you have run, you can list them with:
-
 ```
 jupyter server list
 ```
 
 
+
 When you are done with Jupyter Lab, use "File > Shutdown" to kill the server before you close your window. 
 
+
+## VSCode
+
+
+Install the Python and Jupyter extensions and you can run notebooks in VSCode
 
 
 
