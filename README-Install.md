@@ -9,7 +9,7 @@ Template for running Jupyter Notebooks
 ## Installation
 
 First *do not clone th the JupyterTemplate repo.* Use the Gree 'Use this template'
-button at the top ( of the root page of the repo)
+button at the top ( of the root page of the repo ) to create a new repo, then clone that repo 
 
 
 ## Quickstart
@@ -142,7 +142,6 @@ When you are done with Jupyter Lab, use "File > Shutdown" to kill the server bef
 
 
 ## VSCode
-
 
 Install the Python and Jupyter extensions and you can run notebooks in VSCode
 
