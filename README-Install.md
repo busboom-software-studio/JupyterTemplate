@@ -6,6 +6,12 @@ Template for running Jupyter Notebooks
 # New Project Setup
 
 
+## Installation
+
+First *do not clone th the JupyterTemplate repo.* Use the Gree 'Use this template'
+button at the top ( of the root page of the repo)
+
+
 ## Quickstart
 
 If you are lucky, and on a Mac, this might work: 
@@ -132,7 +138,6 @@ jupyter server list
 ```
 
 
-
 When you are done with Jupyter Lab, use "File > Shutdown" to kill the server before you close your window. 
 
 
@@ -141,5 +146,5 @@ When you are done with Jupyter Lab, use "File > Shutdown" to kill the server bef
 
 Install the Python and Jupyter extensions and you can run notebooks in VSCode
 
-
+## 
 
