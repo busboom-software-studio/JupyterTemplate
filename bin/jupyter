@@ -1,0 +1,70 @@
+
+
+#!/bin/bash
+# Execute the shell for whichever environment we have
+
+# Function to display help message
+help_message() {
+    echo "Usage: $0 [options]"
+    echo "Options:"
+    echo "  -c, --conda  Force to use conda for environment activation."
+    echo "  -v, --venv   Force to use Python virtual environment for activation."
+    echo "  -h, --help   Display this help message."
+    exit 0
+}
+
+# Initialize variables
+force_conda=""
+force_venv=""
+
+# Parse command line arguments
+while getopts ":cvh-" opt; do
+  case $opt in
+    c)
+      force_conda=true
+      ;;
+    v)
+      force_venv=true
+      ;;
+    h)
+      help_message
+      ;;
+    -)
+      case "$OPTARG" in
+        conda)
+          force_conda=true
+          ;;
+        venv)
+          force_venv=true
+          ;;
+        help)
+          help_message
+          ;;
+        *)
+          echo "Invalid option: --$OPTARG" >&2
+          help_message
+          exit 1
+          ;;
+      esac
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      help_message
+      exit 1
+      ;;
+  esac
+done
+
+if ([ "$force_conda" = true ] && [ "$force_venv" != true ]) || ([ -z "$force_venv" ] && [ -d .env ]); then
+    echo "Starting Jupyter lab in conda environment"
+    conda run -p ./.env  jupyter-lab > .jupyter_log 2>&1   & 
+
+elif ([ "$force_venv" = true ] && [ "$force_conda" != true ]) || ([ -z "$force_conda" ] && [ -d .venv ]); then
+    echo "Starting Jupyter lab in python venv environment"
+    source .venv/bin/activate 
+    jupyter-lab > .jupyter_log 2>&1    & 
+else
+    echo "ERROR: Did not find .venv, nor .env virtual directories"
+    exit 1
+fi
+
