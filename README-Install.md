@@ -8,7 +8,7 @@ Template for running Jupyter Notebooks
 
 ## Installation
 
-First *do not clone th the JupyterTemplate repo.* Use the Gree 'Use this template'
+First *do not clone the JupyterTemplate repo.* Use the Gree 'Use this template'
 button at the top ( of the root page of the repo ) to create a new repo, then clone that repo 
 
 
@@ -17,11 +17,20 @@ button at the top ( of the root page of the repo ) to create a new repo, then cl
 If you are lucky, and on a Mac, this might work: 
 
 ```
-bin/install.sh
-bin/start.sh
+bin/install # Install either Conda or Python virtual environment
+bin/jupyter # Start jupyter
+```
+
+After installing, you can activate a shell with your virtual environment
+
+```
+bin/shell # Start a shell in your virtual environment
+jupyter lab
 ```
 
 
+
+## Slower Start
 
 There are two broad ways to get your new project set up, both of which involve
 creating a virtual environment for Python and installing packages. 
@@ -127,7 +136,7 @@ Creating the conda environment may be very slow.
 Jupyterlab is the main program you will be running. From the root of your repository, just run:
 
 ```
-bin/start.sh
+bin/jupyter
 ```
 
 This should open up a new browser. If if does not, it will print a URL that you can past into a browser. 
