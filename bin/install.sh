@@ -75,7 +75,9 @@ create_virtual_env() {
     echo
     read -p "Enter the project name: " proj_name
     python3.11 -m venv .venv --prompt "$proj_name"
+    ./.venv/bin/pip install --upgrade pip
     ./.venv/bin/pip install -r environ/requirements.txt
+    
 }
 
 if [ "$use_conda" = true ]; then

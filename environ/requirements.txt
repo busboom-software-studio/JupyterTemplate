@@ -14,3 +14,6 @@ nbdime
 certifi
 notebook 
 ipyparallel
+jupyter-lsp
+jupyterlab-lsp>=5.0.0
+jedi-language-server

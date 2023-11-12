@@ -5,6 +5,18 @@ Template for running Jupyter Notebooks
 
 # New Project Setup
 
+
+## Quickstart
+
+If you are lucky, and on a Mac, this might work: 
+
+```
+bin/install.sh
+bin/start.sh
+```
+
+
+
 There are two broad ways to get your new project set up, both of which involve
 creating a virtual environment for Python and installing packages. 
 
@@ -97,6 +109,8 @@ conda activate ./.env
 ```
 
 Creating the conda environment may be very slow. 
+
+
 
 
 # Tools
